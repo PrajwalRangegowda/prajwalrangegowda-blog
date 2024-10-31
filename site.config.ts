@@ -2,28 +2,28 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '2e0b31584dc3480db7b406ac699fd04f',
+  rootNotionPageId: '130b848b1d618070a508c51c78f20437',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Notionbees-Bee Productive',
-  domain: 'notionbees.in',
-  author: 'Notionbees',
+  name: 'Prajwal Rangegowda Architects',
+  domain: 'blog.prjalwalrangegowda.com',
+  author: 'PrajwalRangegowda',
 
   // open graph metadata (optional)
-  description: 'Notionbees-Its a site where people are able to buy notion templates online',
+  description: 'Place where your designs gets life-Architecture, Interior, Product design',
 
   // social usernames (optional)
-  twitter: 'notionbees',
-  instagram: 'notionbees',
+  twitter: 'prajwal_rgowda',
+  instagram: 'prajwal_rangegowda',
   // github: 'transitive-bullshit',
-  linkedin: 'notionbees',
+  linkedin: 'prajwal-rangegowda-987b9b1aa',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
-  youtube: 'channel/UC2d_Ha_qk2E8-VQWIDH1kPQ', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  youtube: 'channel/UCPDvO5AuNtygjqi1_KhRN_A', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
@@ -57,11 +57,11 @@ export default siteConfig({
     
     {
        title: 'Templates',
-       pageId: 'bcd3c7dd643648e69cafc86373746188'
+       pageId: '130b848b1d61819f8c07da46678ad332'
      },
     {
       title: 'Blogs',
-      pageId: 'dd82a28579584fb79ad477d2832b3685'
+      pageId: '130b848b1d61819fb548ffe985682ea8'
     }
   ]
 })
