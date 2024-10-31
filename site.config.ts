@@ -54,14 +54,5 @@ export default siteConfig({
   
   navigationStyle: 'custom',
   navigationLinks: [
-    
-    {
-       title: 'Templates',
-       pageId: '130b848b1d61819f8c07da46678ad332'
-     },
-    {
-      title: 'Blogs',
-      pageId: '130b848b1d61819fb548ffe985682ea8'
-    }
   ]
 })
