@@ -141,8 +141,7 @@ background-color: rgb(255, 255, 255 , 0.4);
 }
 
 .notion-collection-card {
-  padding: 10px;
-  border-radius: 10px;
+ 
   background-color: #fafafa;
   box-shadow: 0 1.2px 1.92251px rgba(0, 0, 0, .02), 0 2px 3.68135px rgba(0, 0, 0, .04), 0 1px 5px rgba(0, 0, 0, .05);
 }
