@@ -220,13 +220,13 @@ background-color: rgb(255, 255, 255 , 0.4);
   margin: 0.75em 0;
 }
 
-/*.dark-mode .notion-hr {
+.dark-mode .notion-hr {
   border-color:var(--fg-color-0);
 }
 
 .dark-mode .notion-gallery-grid{
   border-top: 1px solid var(--fg-color-0);
-}*/
+}
 
 @media only screen and (max-width: 920px) {
   .index-page.notion-page {
@@ -302,9 +302,9 @@ background-color: rgb(255, 255, 255 , 0.4);
   padding: 2em;
 }
 
-/*.dark-mode .notion-page-link{
+.dark-mode .notion-page-link{
 color:rgb(8, 8, 8);
-}*/
+}
 
 .notion-code {
   background: rgba(249, 250, 251, 1);
@@ -422,7 +422,7 @@ color:rgb(8, 8, 8);
   );
 }
 
-/* disable highlighting in dark mode 
+ disable highlighting in dark mode 
 .dark-mode .notion-red_background,
 .dark-mode .notion-pink_background,
 .dark-mode .notion-blue_background,
@@ -437,7 +437,7 @@ color:rgb(8, 8, 8);
   border-radius: 0;
   background: none !important;
 }
-  */
+  
 
 /* if you don't want rounded page icon images, remove this */
 .notion-page-icon-hero.notion-page-icon-image {
@@ -454,19 +454,19 @@ color:rgb(8, 8, 8);
   backdrop-filter: saturate(180%) blur(16px);
 }
 
-/*.dark-mode .notion-header {
+.dark-mode .notion-header {
   color: black;
   background: transparent;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   backdrop-filter: saturate(180%) blur(20px);
-}*/
+}
 
 /* Workaround for Firefox not supporting backdrop-filter yet */
-/*@-moz-document url-prefix() {
+@-moz-document url-prefix() {
   .dark-mode .notion-header {
     background: hsla(203, 8%, 20%, 0.8);
   }
-}*/
+}
 
 .notion-bookmark:hover {
   border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
