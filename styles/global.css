@@ -55,6 +55,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Anta';
+  src: url('/fonts/Anta-Regular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Box model adjustments for all elements */
 * {
   box-sizing: border-box;
@@ -80,13 +87,14 @@ body {
     'Droid Sans', 'Helvetica Neue', 'Noto Sans', sans-serif;
   --font-tektur: 'Tektur', sans-serif;
   --font-urbanist: 'Urbanist', sans-serif;
+  --font-anta: 'Anta', sans-serif;
   font-family: var(--notion-font); /* Applies Urbanist by default */
   overflow-x: hidden;
 }
 
 /* Heading styles using Tektur font */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-tektur); /* Apply Tektur to headings */
+  font-family: var(--font-anta); /* Apply Tektur to headings */
 }
 
 /* Paragraph styles using Urbanist font */
