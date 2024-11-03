@@ -92,6 +92,11 @@ body {
   overflow-x: hidden;
 }
 
+body.darkmode {
+  --fg-color: var(black);
+  --bg-color: var(white);
+}
+
 /* Heading styles using Tektur font */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-anta); /* Apply Tektur to headings */
