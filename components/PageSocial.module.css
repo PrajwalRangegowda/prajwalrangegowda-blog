@@ -65,7 +65,7 @@
 
 .action:hover svg {
   transition: fill 100ms ease-out;
-  fill: var(--bg-color);
+  /*fill: var(--bg-color);*/
 }
 
 /*:global(.dark-mode) .action:hover svg {
