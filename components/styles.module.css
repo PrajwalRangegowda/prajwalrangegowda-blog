@@ -60,10 +60,10 @@
   justify-content: space-between;
   align-items: center;
 }
-
+/*
 .dark-mode .footer{
   background-color: rgb(254, 253, 253);
-}
+}*/
 
 .copyright {
   font-size: 80%;

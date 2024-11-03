@@ -40,7 +40,7 @@ export const FooterImpl: React.FC = () => {
       <div className={styles.copyright}>
         Copyright {currentYear} {config.author}
       </div>
-
+       
       <div className={styles.settings}>
         {hasMounted && (
           <a
@@ -54,6 +54,8 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
       </div>
+      
+      
 
       <div className={styles.social}>
         {config.twitter && (
