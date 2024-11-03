@@ -8,7 +8,7 @@ import { api } from './config'
 
 export const searchNotion = pMemoize(searchNotionImpl, {
   cacheKey: (args) => args[0]?.query,
-  cache: new ExpiryMap(10000)
+  cache: new ExpiryMap(10_000)
 })
 
 async function searchNotionImpl(
