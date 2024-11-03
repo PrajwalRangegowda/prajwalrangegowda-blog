@@ -552,4 +552,9 @@ padding-top: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
+  color: black;
+}
+
+.dark-mode .notion-table-of-contents{
+  color: black;
 }
