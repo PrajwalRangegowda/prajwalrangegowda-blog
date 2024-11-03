@@ -485,9 +485,7 @@ color:rgb(8, 8, 8);
   box-shadow: var(--fg-color-0) 0px 1px 0px;
 }
 
-.notion-search {
-  display: none;
-}
+
 
 .notion-search .noResults {
   color: var(--fg-color-3);
