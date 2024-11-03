@@ -55,6 +55,7 @@
 
 .action:hover {
   transition: all 100ms ease-out;
+  background-color: rgb(206, 199, 199);
 }
 
 .action:hover .actionBgPane {
