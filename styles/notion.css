@@ -50,8 +50,6 @@
 
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
-  padding-left: 20px;
-  padding-right: 20px;
   line-height: 1.65;
 }
 
