@@ -532,3 +532,24 @@ padding-top: 0;
 .notion-collection-row-property .notion-property{
   font-size: large;
 }*/
+
+.notion-aside-table-of-contents{
+  max-width: 300px;
+}
+
+.notion-aside-table-of-contents-header{
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.notion-table-of-contents{
+  word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.notion-table-of-contents-item{
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
