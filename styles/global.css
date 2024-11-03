@@ -92,7 +92,7 @@ body {
   overflow-x: hidden;
 }
 
-body.darkmode {
+body .darkmode {
   --fg-color: var(black);
   --bg-color: var(white);
 }
