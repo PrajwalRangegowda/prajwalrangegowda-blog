@@ -556,3 +556,7 @@ padding-top: 0;
 .dark-mode .notion-table-of-contents{
   color: black;
 }
+
+.dark-mode .notion-bookmar{
+  color: black;
+}
