@@ -558,5 +558,5 @@ padding-top: 0;
 }
 
 .dark-mode .notion-bookmar{
-  color: black;
+  --fg-color:black;
 }
