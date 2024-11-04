@@ -560,3 +560,7 @@ padding-top: 0;
 .dark-mode .notion-bookmar{
   --fg-color:black;
 }
+
+.dark-mode .notion-bookmark-title, .notion-bookmark-description, .notion-bookmark-link {
+  color: black;
+}
