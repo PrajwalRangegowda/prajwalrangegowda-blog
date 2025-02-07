@@ -14,8 +14,8 @@ async function searchNotionImpl(
   params: types.SearchParams
 ): Promise<types.SearchResults> {
   const notionApiUrl = process.env.NODE_ENV === 'development'
-    ? 'http://localhost:3000/api/proxy/v1/search'
-    : 'https://api.notion.com/v1/search'; // Use direct API in production (if CORS is configured correctly)
+    ? '/api/search-notion'
+    : '/api/search-notion'; // Use direct API in production (if CORS is configured correctly)
 
   console.log("Environment:", process.env.NODE_ENV);
   console.log("Notion API URL:", notionApiUrl);
@@ -32,6 +32,7 @@ async function searchNotionImpl(
   })
     .then((res) => {
       if (res.ok) {
+        
         return res
       }
 
