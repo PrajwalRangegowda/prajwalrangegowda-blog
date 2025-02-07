@@ -25,7 +25,7 @@ module.exports = withBundleAnalyzer({
     return [
       {
         source: '/api/search-notion',
-        destination: 'https://api.notion.com/v1/search',
+        destination: 'http://localhost:3000/api/proxy/v1/search',
       },
       {
         source: '/api/proxy/:path*',
