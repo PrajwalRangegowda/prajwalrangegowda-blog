@@ -15,7 +15,7 @@ export default async function searchNotion(
 
   console.log('<<< lambda search-notion', searchParams)
   console.log('Fetching data from Notion API via proxy...');
-  const response = await fetch('/pages/api/notion-proxy', {
+  const response = await fetch('http://localhost:3000/api/proxy/v1/search', {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${process.env.NOTION_API_KEY}`,
