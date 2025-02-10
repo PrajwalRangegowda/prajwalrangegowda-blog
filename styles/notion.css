@@ -6,15 +6,20 @@
  * whereas our goal with this site is to adjust Notion's styling in a few key
  * places to add some flare.
  */
-
+:root{
+  --dark-mode-black: rgba(35, 34, 34, 0.822);
+  --dark-mode-black-bold: rgb(35, 33, 33);
+  --dark-mode-black-hover: rgb(68, 68, 68);
+  --dark-mode-white: rgba(217, 212, 212, 0.979);
+}
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
 }
 
 .dark-mode .notion{
-  color:  rgb(8, 8, 8);
-  caret-color:  rgb(8, 8, 8);
+  color:  rgb(255, 255, 255);
+  caret-color:  rgb(255, 255, 255);
 }
 
 .title {
@@ -25,20 +30,20 @@
 }
 
 .dark-mode .title{
-  color: rgb(2, 2, 2);
+  color: var(--dark-mode-white);
 }
 
 
 .dark-mode{
-  --bg-color:rgba(255, 255, 255, 0.95);
-  background-color: rgba(255, 255, 255, 0.95);
+  --bg-color:var(--dark-mode-black);
+  background-color: var(--dark-mode-black);
 }
 
 
-.darkmode {
+/* .dark-mode {
   --fg-color: var(black);
   --bg-color: var(white);
-}
+} */
 
 .notion-frame {
   padding: 0;
@@ -102,7 +107,7 @@
 }
 
 .notion-nav-header{
-background-color: rgb(255, 255, 255 , 0.4);
+background-color:none;
 }
 
 .notion-header .breadcrumb{
@@ -120,6 +125,14 @@ background-color: rgb(255, 255, 255 , 0.4);
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 15px;
   gap: 15px;
+}
+
+@media screen and (max-width: 650px) {
+
+  .notion-gallery-grid{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
 }
 
 .notion-gallery-grid .notion-page-icon-inline {
@@ -148,11 +161,11 @@ background-color: rgb(255, 255, 255 , 0.4);
 
 
 .dark-mode .notion-collection-card{
-  background-color: #fafafa;
-  color: rgb(8,8,8);
+  background-color: var(--dark-mode-black-bold);
+  color:var(--dark-mode-white);
 }
 .dark-mode .notion-collection-card:hover{
-  background-color: #fafafa;
+  background-color: var(--dark-mode-black-hover);
 }
 
 
@@ -180,12 +193,22 @@ background-color: rgb(255, 255, 255 , 0.4);
 
 .notion-collection-card-cover {
   border-bottom: 0 none;
+
   transition: filter 150ms linear;
   filter: none;
 }
 
 .notion-collection-card:hover .notion-collection-card-cover {
   filter: brightness(120%);
+}
+
+@media screen and (max-width: 650px) {
+
+  .notion-collection-card-cover {
+
+    max-height: 100px;
+  }
+
 }
 
 .notion-collection-card-body {
@@ -303,7 +326,7 @@ background-color: rgb(255, 255, 255 , 0.4);
 }
 
 .dark-mode .notion-page-link{
-color:rgb(8, 8, 8);
+color:var(--dark-mode-white);
 }
 
 .notion-code {
@@ -451,20 +474,22 @@ color:rgb(8, 8, 8);
 
 .notion-header {
   background: hsla(0, 0%, 100%, 0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
   backdrop-filter: saturate(180%) blur(16px);
 }
 
 .dark-mode .notion-header {
-  color: black;
-  background: transparent;
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  color:var(--dark-mode-white);
+  background: var(--dark-mode-black);
+  /* -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); */
 }
 
 /* Workaround for Firefox not supporting backdrop-filter yet */
 @-moz-document url-prefix() {
   .dark-mode .notion-header {
-    background: hsla(203, 8%, 20%, 0.8);
+    background: var(--dark-mode-black);
   }
 }
 
@@ -550,17 +575,17 @@ padding-top: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
-  color: black;
+
 }
 
 .dark-mode .notion-table-of-contents{
-  color: black;
+  color: var(--dark-mode-white);
 }
 
 .dark-mode .notion-bookmar{
-  --fg-color:black;
+  --fg-color:var(--dark-mode-white);
 }
 
 .dark-mode .notion-bookmark-title, .notion-bookmark-description, .notion-bookmark-link, .notion-bookmark-link-text {
-  color: black;
+  color: var(--dark-mode-white);
 }
